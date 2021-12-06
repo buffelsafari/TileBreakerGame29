@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.buffelsoft.tilebreaker" android:versionCode="2" android:versionName="1.1" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="22" android:targetSdkVersion="29" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:label="TileBreakerGame29">
+		<!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-6161850243196813~9002156464" />
+	</application>
+</manifest>

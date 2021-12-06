@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8B1F450-600F-4988-A46F-FC0FC41FAF40}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TileBreakerGame29</RootNamespace>
+    <AssemblyName>tileBreakerGame</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidStoreUncompressedFileExtensions>.m4a</AndroidStoreUncompressedFileExtensions>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <JavaMaximumHeapSize>2G</JavaMaximumHeapSize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <MandroidI18n />
+    <AndroidSupportedAbis />
+    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
+    <AndroidKeyStore>false</AndroidKeyStore>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableSGenConcurrent>false</AndroidEnableSGenConcurrent>
+    <MandroidI18n />
+    <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
+    <JavaMaximumHeapSize>2G</JavaMaximumHeapSize>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <DebugSymbols>false</DebugSymbols>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidSigningKeyStore>D:\NVPACK\jdk1.8.0_77\bin\buffelsoft-release.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>bajskatten1!</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>buffelsoft</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>bajskatten1!</AndroidSigningKeyPass>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity1.cs" />
+    <Compile Include="AdStuff\AdController.cs" />
+    <Compile Include="AdStuff\RewardDialog.cs" />
+    <Compile Include="Bomb\Bomber.cs" />
+    <Compile Include="Bomb\Bubble.cs" />
+    <Compile Include="Collisions.cs" />
+    <Compile Include="ColorFunctions.cs" />
+    <Compile Include="Controller\ComputerController.cs" />
+    <Compile Include="Controller\IController.cs" />
+    <Compile Include="Controller\PlayerController.cs" />
+    <Compile Include="Cracks.cs" />
+    <Compile Include="DebugFunctions.cs" />
+    <Compile Include="Editor\YesNoDialog.cs" />
+    <Compile Include="Editor\InformationBar.cs" />
+    <Compile Include="Editor\ListSelector.cs" />
+    <Compile Include="Editor\ColorSelector.cs" />
+    <Compile Include="Editor\LevelEditor.cs" />
+    <Compile Include="Editor\EditorButton.cs" />
+    <Compile Include="Editor\Slider.cs" />
+    <Compile Include="Editor\TileSelector.cs" />
+    <Compile Include="Editor\TrashCan.cs" />
+    <Compile Include="Entities\Dynamic\BBalls\BallObject.cs" />
+    <Compile Include="Entities\Dynamic\BBalls\Balls.cs" />
+    <Compile Include="Entities\Dynamic\Bat.cs" />
+    <Compile Include="Entities\Dynamic\DustCloud\Dust.cs" />
+    <Compile Include="Entities\Dynamic\DustCloud\DustParticle.cs" />
+    <Compile Include="Entities\Dynamic\FragParticles\FragParticle.cs" />
+    <Compile Include="Entities\Dynamic\FragParticles\Frags.cs" />
+    <Compile Include="Entities\Dynamic\PowerUps\PowerUp.cs" />
+    <Compile Include="Entities\Dynamic\Weapon\Blaster.cs" />
+    <Compile Include="Entities\Dynamic\Weapon\BlasterHit.cs" />
+    <Compile Include="Entities\Managers\EntityManager.cs" />
+    <Compile Include="Entities\Managers\EntityManagerFSM\ChangeLevel.cs" />
+    <Compile Include="Entities\Managers\EntityManagerFSM\GameOver.cs" />
+    <Compile Include="Entities\Managers\EntityManagerFSM\IState.cs" />
+    <Compile Include="Entities\Managers\EntityManagerFSM\Playing.cs" />
+    <Compile Include="Entities\Managers\EntityManagerFSM\Serving.cs" />
+    <Compile Include="Entities\Managers\EntityManagerFSM\WatchRewardAd.cs" />
+    <Compile Include="Entities\Static\AbstractStaticEntity.cs" />
+    <Compile Include="Entities\Static\EffectFactory.cs" />
+    <Compile Include="Entities\Static\LeftWall.cs" />
+    <Compile Include="Entities\Static\RightWall.cs" />
+    <Compile Include="Entities\Static\Tile.cs" />
+    <Compile Include="Entities\Static\StaticEntityFactory.cs" />
+    <Compile Include="Entities\Static\UpperWall.cs" />
+    <Compile Include="Light\FLight\FreeLight.cs" />
+    <Compile Include="Light\FLight\FreeLightObject.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="GameStates\EditorGameState.cs" />
+    <Compile Include="GameStates\IGameState.cs" />
+    <Compile Include="GameStates\MenuGameState.cs" />
+    <Compile Include="GameStates\PlayingGameState.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="HUD\Life.cs" />
+    <Compile Include="HUD\LifeSprites.cs" />
+    <Compile Include="HUD\ScoreHUD.cs" />
+    <Compile Include="HUD\ScoreSprite.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="Light\Comparer.cs" />
+    <Compile Include="Light\ILightRequester.cs" />
+    <Compile Include="Light\LightData.cs" />
+    <Compile Include="Light\LightManager.cs" />
+    <Compile Include="LineSegment.cs" />
+    <Compile Include="Menu\Head.cs" />
+    <Compile Include="Menu\HighScore.cs" />
+    <Compile Include="Menu\PlayerItem.cs" />
+    <Compile Include="Menu\RadioButtons.cs" />
+    <Compile Include="Menu\ColorSlider.cs" />
+    <Compile Include="Menu\Slider.cs" />
+    <Compile Include="Menu\Button.cs" />
+    <Compile Include="Menu\IMenuItem.cs" />
+    <Compile Include="Menu\Menu.cs" />
+    <Compile Include="Menu\MenuPage.cs" />
+    <Compile Include="Menu\Wisp.cs" />
+    <Compile Include="Refraction\ShockWave.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShaderContainer.cs" />
+    <Compile Include="Refraction\ShockRefraction.cs" />
+    <Compile Include="Sound\SoundEffectPool.cs" />
+    <Compile Include="Sound\SoundManager.cs" />
+    <Compile Include="TextureContainer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+    <AndroidResource Include="Resources\Values\Strings.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </MonoGameContentReference>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Framework.Android" Version="3.8.0.1641" />
+    <PackageReference Include="MSTest.TestFramework">
+      <Version>2.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Ads.Lite">
+      <Version>71.1720.4</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
